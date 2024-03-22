@@ -28,14 +28,14 @@ function ensureDirectoryExists(directory) {
 (async () => {
   try {
     const browser = await puppeteer.launch({ 
-      headless: false,
+      headless: true,
       defaultViewport: null,
-      args: ['--start-maximized'] // Maximize browser window
+      args: ['--start-maximized']
     });
     let page = await browser.newPage();
 
     // Go to the page
-    await page.goto('http://0.0.0.0:8080/playground.html');
+    await page.goto('http://0.0.0.0:8080/site/playground.html');
 
     // Define input and output directories
     const inputDirectory = process.argv[2];
