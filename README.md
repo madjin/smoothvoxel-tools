@@ -12,8 +12,11 @@ PLanning to add CLI support for all the features on [Smooth Voxels Playground](h
 Usage:
 > Tested with node v18
 
-1. Run a web server from repo
+1. Install Puppeteer
+`npm install puppeteer`
+
+2. Run a web server from repo
 `python3 -m http.server 8080`
 
-2. Run the script on your folder of vox models
+3. Run the script on your folder of vox models
 `node index.js input_folder output_folder`
